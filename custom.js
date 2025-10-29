@@ -48,7 +48,7 @@ let userNum;
 
 let chances = 5;
 
-confirm.addEventListener("click", () => {
+function playGame() {
   chances--;
   console.log(chances);
   chance.innerText = `별은 이제 ${chances}개뿐!`;
@@ -85,20 +85,23 @@ confirm.addEventListener("click", () => {
     wrong.classList.add("on");
   }
   user.value = "";
-});
+}
+confirm.addEventListener("click", playGame);
 
 /*재도전*/
-let retry = document.querySelector(".retry");
-retry.addEventListener("click", () => {
-  letsgo.style.display = "block";
-  elevatorDoor.forEach((door) => {
-    door.style.width = "0%";
+let retryAll = document.querySelectorAll(".retry");
+retryAll.forEach((retry) => {
+  retry.addEventListener("click", () => {
+    letsgo.style.display = "block";
+    elevatorDoor.forEach((door) => {
+      door.style.width = "0%";
+    });
+    elevator.style.marginTop = "0%";
+    results.forEach((result) => {
+      result.classList.remove("on");
+    });
+    random = Math.round(Math.random() * 100 + 1);
+    chances = 5;
+    chance.innerText = `★★★★★`;
   });
-  elevator.style.marginTop = "0%";
-  results.forEach((result) => {
-    result.classList.remove("on");
-  });
-  random = Math.round(Math.random() * 100 + 1);
-  chances = 5;
-  chance.innerText = `★★★★★`;
 });
