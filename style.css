@@ -1,0 +1,190 @@
+/*reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+@font-face {
+  font-family: "OngleipParkDahyeon";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+body {
+  font-family: "OngleipParkDahyeon";
+}
+/*start*/
+.wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.title {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
+  font-weight: normal;
+}
+.exposition {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5vh;
+  box-sizing: border-box;
+  display: none;
+  justify-content: center;
+}
+.exposition .bear01 {
+  height: 80vh;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.exposition .txt {
+  font-size: 5vh;
+}
+.exposition span {
+  color: rgb(185, 185, 185);
+  margin-left: -20px;
+}
+.elevator {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(gray, rgb(201, 201, 201));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: 1s;
+}
+.elevator p {
+  font-size: 5vh;
+  height: 5vh;
+  margin-top: 50%;
+}
+.elevator .doors {
+  width: 50%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.elevator .door {
+  width: 0%;
+  height: 100vh;
+  border: 4px solid #0f0f0f;
+  box-sizing: border-box;
+  background: linear-gradient(rgb(201, 201, 201), gray);
+  transition: 1s;
+}
+.elevator .numbers {
+  width: 15%;
+  height: 20vh;
+  border: 1px solid #333;
+  color: #fff;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.elevator .numbers .view {
+  width: 100%;
+  height: 4vh;
+  background-color: #333;
+}
+.elevator .numbers .num {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.elevator .numbers .num div {
+  width: calc(100% / 3);
+  height: 4vh;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elevator .btnWrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+.elevator .btn {
+  border: 1px solid #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*game*/
+.game {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgb(201, 201, 201), gray);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.game .inputPlace {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.game input {
+  width: 350px;
+  height: 100px;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.game button {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.game p {
+  font-size: 40px;
+}
+.game .chance {
+  font-size: 60px;
+}
+/*result*/
+.result {
+  width: 100%;
+  height: 100vh;
+  font-size: 5vw;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #ccc;
+  top: 0;
+  left: 0;
+}
+.result.on {
+  display: flex;
+}

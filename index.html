@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!---->
+      <div class="title"><span>띵동</span><span>🔔</span>몇 층이세용?</div>
+      <!---->
+      <div class="exposition">
+        <img class="bear01" src="img/img01.png" alt="" />
+        <div class="txt">
+          <span>이럴수가!?!</span><br />
+          몇층인지 도저히 알 수가 없잖앙?!
+        </div>
+      </div>
+      <!---->
+      <div class="elevator">
+        <div class="doors">
+          <div class="leftDoor door"></div>
+          <p>
+            일단 가보자!<br />
+            닫힘버튼을 눌러주세욤
+          </p>
+          <div class="rightDoor door"></div>
+        </div>
+
+        <div class="numbers">
+          <div class="view"></div>
+          <div class="num">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>8</div>
+            <div>0</div>
+          </div>
+          <div class="btnWrap">
+            <div class="close btn">▶|◀</div>
+            <div class="open btn">◀|▶</div>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="game">
+        <p>5번 안에 성공해서 별점을 지켜보자!</p>
+
+        <div class="inputPlace">
+          <input placeholder=" 몇층으로 가면 될까?" />
+          <button>Go!</button>
+        </div>
+
+        <p class="chance">★★★★★</p>
+        <div class="resultWrap">
+          <div class="result wrong">
+            ☆☆☆☆☆<br />별점을 모두 잃었당 ㅠ
+            <button class="retry">재도전!</button>
+          </div>
+          <div class="result correct">★★★★★<br />별점을 지켰다!</div>
+          <div class="result up">아냐 더 위층!</div>
+          <div class="result down">아냐ㅠㅠ 더 아래층!!</div>
+        </div>
+      </div>
+    </div>
+    <script src="custom.js"></script>
+  </body>
+</html>
