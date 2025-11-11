@@ -8,7 +8,7 @@ function titleshow() {
 setTimeout(titleshow, 2000);
 setTimeout(() => {
   exposition.style.display = "none";
-}, 4000);
+}, 10000);
 
 /*elevator*/
 let elevator = document.querySelector(".elevator");
@@ -39,7 +39,7 @@ let correct = document.querySelector(".correct");
 let up = document.querySelector(".up");
 let down = document.querySelector(".down");
 let chance = document.querySelector(".chance");
-random = Math.round(Math.random() * 100 + 1);
+random = Math.floor(Math.random() * 50) + 1;
 console.log(random);
 
 let confirm = document.querySelector(".game button");
@@ -100,7 +100,7 @@ retryAll.forEach((retry) => {
     results.forEach((result) => {
       result.classList.remove("on");
     });
-    random = Math.round(Math.random() * 100 + 1);
+    random = Math.floor(Math.random() * 50) + 1;
     chances = 5;
     chance.innerText = `★★★★★`;
   });

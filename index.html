@@ -3,19 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>럭키베어 | 두근두근 층수 맞히기</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrap">
       <!---->
-      <div class="title"><span>띵동</span><span>🔔</span>몇 층이세용?</div>
+      <div class="title">
+        <img
+          src="img/title.png"
+          alt="럭키! 베어: 두근두근 층수 맞히기"
+          class="title-logo"
+        />
+      </div>
       <!---->
       <div class="exposition">
         <img class="bear01" src="img/img01.png" alt="" />
         <div class="txt">
-          <span>이럴수가!?!</span><br />
-          몇층인지 도저히 알 수가 없잖앙?!
+          <span>큰일났곰! 🐻</span><br />
+          나 몇 층으로 가야하는지 알 수가 없곰...<br />
+          <span>50층</span>이나 되는데 어떡하곰?<br />
+          나 좀 도와줄곰?
         </div>
       </div>
       <!---->
@@ -23,8 +31,8 @@
         <div class="doors">
           <div class="leftDoor door"></div>
           <p>
-            일단 가보자!<br />
-            닫힘버튼을 눌러주세욤
+            일단 출발하자곰!<br />
+            닫힘버튼을 눌러주라곰!
           </p>
           <div class="rightDoor door"></div>
         </div>
@@ -51,11 +59,11 @@
       </div>
       <!---->
       <div class="game">
-        <p>5번 안에 성공해서 별점을 지켜보자!</p>
+        <p>5번 안에 성공해서 별점을 지켜보자곰!</p>
 
         <div class="inputPlace">
           <input
-            placeholder=" 몇층으로 가면 될까?"
+            placeholder=" 몇층으로 가볼까곰?"
             onkeypress="if(event.keyCode == 13) {
         playGame()}"
           />
@@ -65,15 +73,31 @@
         <p class="chance">★★★★★</p>
         <div class="resultWrap">
           <div class="result wrong">
-            ☆☆☆☆☆<br />별점을 모두 잃었당 ㅠ
-            <button class="retry">재도전!</button>
+            <img src="img/star.png" /><br />으앙! 별을 다 잃었곰... 😭
+            <button class="retry">다시 해보곰!</button>
+            <div class="imgWrap">
+              <img src="img/result_wrong.png" />
+            </div>
           </div>
           <div class="result correct">
-            ★★★★★<br />별점을 지켰다!
-            <button class="retry">한번 더 해볼까!?</button>
+            ★★★★★<br />정답이곰! 우리가 해냈곰! 💖
+            <button class="retry">한 판 더 하곰!?</button>
+            <div class="imgWrap">
+              <img src="img/result_co.png" />
+            </div>
           </div>
-          <div class="result up">아냐 더 위층!</div>
-          <div class="result down">아냐ㅠㅠ 더 아래층!!</div>
+          <div class="result up">
+            더 높은 층이곰! Up! Up! 🎈
+            <div class="imgWrap">
+              <img src="img/result_up.png" />
+            </div>
+          </div>
+          <div class="result down">
+            아까비! 조금 더 아래곰! 👇
+            <div class="imgWrap">
+              <img src="img/result_do.png" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
